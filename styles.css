@@ -1,5 +1,6 @@
 /* Shared Styles */
 body {
+  margin: 0;
   font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Work Sans", sans-serif;
@@ -52,9 +53,7 @@ nav a {
 }
 
 /* banner styles */
-.banner-container{
- 
-}
+
 .banner-content {
   text-align: center;
   width: 50%;
@@ -69,8 +68,6 @@ nav a {
 }
 .banner-description {
   color:#727272;
-  font-size: 1rem;
-  font-weight: 400;
 }
 .banner img{
     width: 100%;
@@ -78,9 +75,11 @@ nav a {
 
 /* Responsive media queries */
 @media screen and (max-width: 576px) {
+  /* header responsive styles */
     .header{
         padding: 20px;
     }
+    /* navbar responsive styles */
     .nav{
         flex-direction: column;
         align-items: center;
@@ -97,4 +96,15 @@ nav a {
    li{
     margin: 20px;
    }
+   /* banner responsive styles */
+   .banner-container, .banner-content{
+    flex-direction: column;
+   }
+   .banner-content{
+    width: fit-content;
+    
+   }
+   
+
+
 }
