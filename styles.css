@@ -36,6 +36,7 @@ body {
 }
 nav > ul {
   display: flex;
+  flex-wrap: wrap;
   width: 25%;
   justify-content: space-between;
   padding-left: 0;
@@ -43,7 +44,7 @@ nav > ul {
 }
 nav li {
   list-style: none;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 nav a {
   color: #424242;
@@ -67,59 +68,94 @@ nav a {
   margin-bottom: 10px;
 }
 .banner-description {
-  color:#727272;
+  color: #727272;
 }
-.banner img{
-    width: 100%;
+.banner img {
+  width: 100%;
+}
+/* main section styles */
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* teams section style */
+.teams-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  padding-top: 90px;
+  padding-left: 40px;
+}
+.teams-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.teams-content {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.quick-list {
+  color: #727272;
+  font-size: 45px;
+  font-weight: 500;
+}
+.of-our {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+}
+.features {
+  color: #ff900e;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 /* Responsive media queries */
 /* small devices */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 281px) and (max-width: 576px) {
   /* header responsive styles */
-    .header{
-        padding: 20px;
-    }
-    /* navbar responsive styles */
-    .nav{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .nav-title{
-        
-    }
-   .nav > ul{
+  .header {
+    padding: 20px;
+  }
+  /* navbar responsive styles */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-title {
+  }
+  .nav > ul {
     flex-wrap: nowrap;
     width: 100%;
     justify-content: center;
-   }
-   li{
-    margin: 20px;
-   }
-   /* banner responsive styles */
-   .banner-container, .banner-content{
+    padding-right: 20px;
+  }
+  li {
+    margin-left: 20px;
+  }
+  /* banner responsive styles */
+  .banner-container,
+  .banner-content {
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-   }
-   .banner-content{
+  }
+  .banner-content {
     width: fit-content;
-    
-   }
+  }
 }
 /* Medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .header{
+  .header {
     padding: 20px;
   }
-  .nav{
+  .nav {
     flex-direction: column;
   }
-  .nav>ul{
+  .nav > ul {
     width: 80%;
     flex-wrap: nowrap;
     justify-content: space-evenly;
   }
-  
 }
