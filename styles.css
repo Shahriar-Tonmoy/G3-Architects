@@ -83,7 +83,7 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 100%;
+  width: auto;
   padding-top: 90px;
   padding-left: 40px;
 }
@@ -153,14 +153,16 @@ nav a {
   /* main responsive styles */
   .teams-container{
     flex-direction: column-reverse;
-    padding: 10px;
+    align-items: center;
+    padding-left: 0;
   }
   .teams-images{
     grid-template-columns: 1fr;
   }
   .teams-content{
     margin-bottom: 30px;
-    padding-left: 30px ;
+    padding-left: 20px ;
+    padding-right: 20px;
     text-align: center;
   }
 
@@ -185,5 +187,6 @@ nav a {
   .teams-content{
     text-align: center;
     padding: 0;
+    margin-bottom: 30px;
   }
 }
