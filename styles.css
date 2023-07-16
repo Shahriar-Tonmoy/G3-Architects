@@ -36,7 +36,6 @@ body {
 }
 nav > ul {
   display: flex;
-  flex-wrap: wrap;
   width: 25%;
   justify-content: space-between;
   padding-left: 0;
@@ -44,6 +43,7 @@ nav > ul {
 }
 nav li {
   list-style: none;
+  margin-left: 30px;
 }
 nav a {
   color: #424242;
@@ -74,6 +74,7 @@ nav a {
 }
 
 /* Responsive media queries */
+/* small devices */
 @media screen and (max-width: 576px) {
   /* header responsive styles */
     .header{
@@ -99,12 +100,26 @@ nav a {
    /* banner responsive styles */
    .banner-container, .banner-content{
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
    }
    .banner-content{
     width: fit-content;
     
    }
-   
-
-
+}
+/* Medium devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .header{
+    padding: 20px;
+  }
+  .nav{
+    flex-direction: column;
+  }
+  .nav>ul{
+    width: 80%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  
 }
